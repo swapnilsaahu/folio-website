@@ -1,12 +1,13 @@
+import HeroSection from "./components/HeroSection"
 
 function App() {
 
     return (
         <>
-            <div className="font-bold bg-black text-white">
-                hello
-            </div>
+            <div className="h-screen bg-gray-300">
+                <HeroSection /> </div>
         </>
+
     )
 }
 
