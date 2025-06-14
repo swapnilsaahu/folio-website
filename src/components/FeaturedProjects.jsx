@@ -11,10 +11,10 @@ const FeaturedProjects = () => {
     ]
     return (
         <div className="font-['kadwa']">
-            <h3 className="text-5xl font-bold text-center my-5">Projects: </h3>
+            <h3 className="text-5xl font-bold text-center my-5">Projects</h3>
             <div className="flex justify-center items-center flex-wrap lg:flex-nowrap mx-4 md:mx-20 lg:mx-10 "> {items.map(({ title, desc, techStack, liveLink, github, img }, index) => (
-                <div key={index} className="py-5 px-4 bg-gray-200 m-2 gap-2">
-                    <img src={img} className="h-50 md:60 lg:h-100 border-e-red-400  rounded-xl " />
+                <div key={index} className="py-5 px-4 bg-gray-200 m-2 gap-2 rounded-xl hover:ring-8">
+                    <img src={img} className="h-50 md:60 lg:h-100 rounded-xl " />
                     <p className="font-bold text-balance text-xl my-2">{title}</p>
                     <div className="max-w-3/4">
                         <p>{desc}</p>
