@@ -33,18 +33,20 @@ const TechStack = () => {
         { label: "C", icon: <SiC /> },
     ];
     return (
-        <div className="overflow-hidden">
+        <div className="overflow-hidden font-['kadwa']">
             <h3 className="text-5xl font-bold w-screen text-center">Tech Stack:</h3>
-            <div className="flex flex-wrap mx-10 md:mx-5 lg:mx-40 p-1 md:p-5 justify-center items-center">
-                {items.map(({ label, icon, color }, index) => (
-                    <div key={index} className="flex m-2 p-1 md:p-3 bg-gray-200 rounded-2xl transition transform hover:-translate-y-2 hover:shadow-2xs ">
-                        <div className="text-2xl md:text-4xl mt-1 md:mt-0">
-                            {icon}
+            < div className="flex flex-wrap mx-10 md:mx-5 lg:mx-40 p-1 md:p-5 justify-center items-center" >
+                {
+                    items.map(({ label, icon, color }, index) => (
+                        <div key={index} className="flex m-2 p-2 md:p-3 bg-gray-200 rounded-2xl transition transform hover:-translate-y-2 hover:shadow-2xs ">
+                            <div className="text-2xl md:text-4xl mt-1 md:mt-0">
+                                {icon}
+                            </div>
+                            <p className="text-xl md:text-3xl font-semibold mt-1 ml-1 mr-1">{label}</p>
                         </div>
-                        <p className="text-xl md:text-3xl font-semibold mt-1 ml-1 mr-1">{label}</p>
-                    </div>
-                ))}
-            </div>
+                    ))
+                }
+            </div >
         </div >
     )
 }
