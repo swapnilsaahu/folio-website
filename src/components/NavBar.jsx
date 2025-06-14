@@ -12,7 +12,7 @@ const items = [
 
 const NavBar = () => {
     return (
-        <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 rounded-xl shadow-md bg-gray-200 z-50">
+        <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 rounded-xl shadow-md bg-gray-200 z-50 ">
             <div className="flex p-3 space-x-4">
                 {items.map(({ label, icon, href }, index) => (
                     <a key={index}

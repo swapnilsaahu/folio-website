@@ -13,6 +13,7 @@ function App() {
                 <NavBar />
                 <TechStack />
                 <FeaturedProjects />
+
             </div>
 
         </>
