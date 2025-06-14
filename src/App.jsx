@@ -8,7 +8,7 @@ function App() {
 
     return (
         <>
-            <div className="bg-gray-300 ">
+            <div className="bg-gray-300 scroll-smooth">
                 <HeroSection />
                 <NavBar />
                 <TechStack />
