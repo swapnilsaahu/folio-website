@@ -1,23 +1,20 @@
-import HeroSection from "./components/HeroSection"
-import NavBar from "./components/NavBar"
-import TechStack from "./components/TechStack"
-import FeaturedProjects from "./components/FeaturedProjects"
-import FooterComponent from "./components/FooterComponent"
+import { Route, Router, Routes } from "react-router-dom"
+import HomePage from "./components/HomePage"
+import Projects from "./components/Projects"
+import HomePageLayout from "./components/HomePage"
+import AboutMe from "./components/AboutMe"
 
 function App() {
 
     return (
         <>
-            <div className="bg-gray-300 scroll-smooth">
-                <HeroSection />
-                <NavBar />
-                <TechStack />
-                <FeaturedProjects />
-                <FooterComponent />
-            </div>
-
+            <Routes>
+                <Route element={<HomePageLayout />}>
+                    <Route path="/" element={<AboutMe />}></Route>
+                    <Route path="projects" element={<Projects />}></Route>
+                </Route>
+            </Routes>
         </>
-
     )
 }
 
