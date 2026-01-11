@@ -4,6 +4,17 @@ const NavItem = ({ className, children }) => {
     let posX = 0, posY = 0, startX = 0, startY = 0;
     const dragRef = useRef(null);
     const isDraging = useRef(false);
+
+    const audioRef = useRef(null);
+
+    const handlClick = () => {
+        const audio = audioRef.current;
+        if (!audio) return;
+
+        audio.currentTime = 0;
+        audio.volume = 0.3;
+        audio.play();
+    }
     useEffect(() => {
         const div = dragRef.current;
         if (!div) return;
@@ -47,7 +58,10 @@ const NavItem = ({ className, children }) => {
         }
     }, [])
     return (
-        <div className={className} ref={dragRef}>
+        <div className={className} ref={dragRef} onClick={handlClick}>
+            <audio ref={audioRef} preload="auto">
+                <source src="/sound/click.m4a" type="audio/mp4" />
+            </audio>
             <div>{children}</div>
         </div>
     )
