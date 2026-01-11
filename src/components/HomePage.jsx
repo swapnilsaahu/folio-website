@@ -15,11 +15,11 @@ import { Link, Outlet } from 'react-router-dom'
 const HomePageLayout = () => {
     return (
         <div className='flex items-center justify-center'>
-            <div className='fixed'>
-                <div className='flex flex-col h-150 w-150 bg-blue-200 rounded-2xl'>
+            <div className='fixed scale-65 sm:scale-100'>
+                <div className='flex flex-col h-120 w-150 bg-blue-200 rounded-2xl'>
                     <Outlet />
                 </div>
-                <div className='flex gap-18 mx-8 my-2'>
+                <div className='flex gap-14 sm:gap-18 mx-12 sm:mx-8 my-2 '>
                     <NavItem className="">
                         <img src={helm} className='h-10' />
                         <Link to="/" className='text-2xl text-white ml-2'>Me</Link>
