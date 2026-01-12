@@ -7,7 +7,7 @@ const projDetails = [
 ]
 const Projects = () => {
     return (
-        <div className="overflow-auto">
+        <div className=" scroll-smooth overflow-auto">
             {projDetails.map((p) => (
                 <div key={p.id} className="flex m-4 justify-between border-2 p-2">
                     <div>

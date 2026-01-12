@@ -21,16 +21,22 @@ const HomePageLayout = () => {
                 </div>
                 <div className='flex gap-14 sm:gap-18 mx-12 sm:mx-8 my-2 justify-between'>
                     <NavItem className="hover:shadow-white hover:-translate-y-2">
-                        <img src={helm} className='h-10' />
-                        <Link to="/" className='text-2xl text-white ml-2'>Me</Link>
+                        <Link to="/" className='text-2xl text-white'>
+                            <img src={helm} className='h-10' />
+                            <p className='ml-2'>Me</p>
+                        </Link>
                     </NavItem>
                     <NavItem className="hover:-translate-y-2">
-                        <img src={moon} className='h-10 ml-4' />
-                        <Link to="/projects" className='text-2xl text-white'>Projects</Link>
+                        <Link to="/projects" className='text-2xl text-white'>
+                            <img src={moon} className='h-10 ml-4' />
+                            <p>Projects</p>
+                        </Link>
                     </NavItem>
                     <NavItem className="hover:-translate-y-2">
-                        <img src={contacts} className='h-10 ml-5' />
-                        <Link to="/contacts" className='text-2xl text-white'>Contacts</Link>
+                        <Link to="/contacts" className='text-2xl text-white'>
+                            <img src={contacts} className='h-10 ml-5' />
+                            <p>Contacts</p>
+                        </Link>
                     </NavItem>
                 </div>
             </div>
